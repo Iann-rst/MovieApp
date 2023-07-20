@@ -56,6 +56,9 @@ class _HomePageState extends State<HomePage> {
                 ),
                 cursorColor: Colors.white,
               ),
+              const SizedBox(
+                height: 20,
+              ),
               ValueListenableBuilder<Movies?>(
                 valueListenable: _controller.movies,
                 builder: (_, movies, __) {
