@@ -56,15 +56,14 @@ class CustomMovieCard extends StatelessWidget {
                           movie.title,
                           style: Theme.of(context).textTheme.titleLarge,
                           softWrap: true,
-                          overflow: TextOverflow.visible,
+                          overflow: TextOverflow.ellipsis,
+                          textAlign: TextAlign.start,
                         ),
                         const Spacer(),
                         Text(
                           'Popularidade: ${movie.popularity.toString()}',
                         ),
-                        const SizedBox(
-                          height: 10,
-                        ),
+                        const Spacer(),
                         Text(
                             'Quantidade de votos: ${movie.voteAverage.toString()}'),
                       ],

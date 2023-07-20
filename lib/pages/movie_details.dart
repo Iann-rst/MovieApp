@@ -48,9 +48,11 @@ class MovieDetails extends StatelessWidget {
                   const SizedBox(
                     width: 10,
                   ),
-                  Text(
-                    movie.originalTitle,
-                    style: const TextStyle(fontWeight: FontWeight.bold),
+                  Flexible(
+                    child: Text(
+                      movie.originalTitle,
+                      style: const TextStyle(fontWeight: FontWeight.bold),
+                    ),
                   ),
                 ],
               ),
