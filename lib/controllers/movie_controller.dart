@@ -16,7 +16,8 @@ class MovieController {
   onChanged(String value) {
     List<Movie> list = _cachedMovies!.listMovies
         .where(
-          (movie) => movie.toString().toLowerCase().contains(value),
+          (movie) =>
+              movie.toString().toLowerCase().contains(value.toLowerCase()),
         )
         .toList();
     movies.value = movies.value!.copyWith(listMovies: list);
